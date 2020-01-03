@@ -1,10 +1,10 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *The Tipping App*
 
-**Name of your app** is a tip calculator application for iOS.
+**The Tipping App** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: **Azmeh Durrani**
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
@@ -34,6 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+    While building the app, the syntax for Swift, and how the actions in the view connect to functions were new to me.
 
 ## License
 
