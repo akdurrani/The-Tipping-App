@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var percentLabel: UILabel!
+    @IBOutlet weak var totalView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         //let defaultTip = defaults.integer(forKey: "defaultTip")
         tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
+        billField.becomeFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {
