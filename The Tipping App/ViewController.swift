@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         //let defaultTip = defaults.integer(forKey: "defaultTip")
         tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
         billField.becomeFirstResponder()
+        self.totalView.alpha = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +57,13 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func showTotalView(_ sender: Any) {
+        UIView.animate(withDuration:0.4, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.2, animations: {
+            // This causes first view to fade in and second view to fade out
+            self.totalView.alpha = 1
+        })
+        
+    }
     @IBAction func calculateTip(_ sender: Any) {
         //get bill amount
         let bill = Double(billField.text!) ?? 0
