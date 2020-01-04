@@ -15,6 +15,7 @@
 		CB36D14623BE7A1000EAF431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB36D14423BE7A1000EAF431 /* LaunchScreen.storyboard */; };
 		CB36D15123BE7A1100EAF431 /* The_Tipping_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36D15023BE7A1100EAF431 /* The_Tipping_AppTests.swift */; };
 		CB36D15C23BE7A1100EAF431 /* The_Tipping_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36D15B23BE7A1100EAF431 /* The_Tipping_AppUITests.swift */; };
+		CB36D16A23C0061B00EAF431 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36D16923C0061B00EAF431 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CB36D15723BE7A1100EAF431 /* The Tipping AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Tipping AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB36D15B23BE7A1100EAF431 /* The_Tipping_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Tipping_AppUITests.swift; sourceTree = "<group>"; };
 		CB36D15D23BE7A1100EAF431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB36D16923C0061B00EAF431 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				CB36D14223BE7A1000EAF431 /* Assets.xcassets */,
 				CB36D14423BE7A1000EAF431 /* LaunchScreen.storyboard */,
 				CB36D14723BE7A1000EAF431 /* Info.plist */,
+				CB36D16923C0061B00EAF431 /* SettingsViewController.swift */,
 			);
 			path = "The Tipping App";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				CB36D13E23BE7A0E00EAF431 /* ViewController.swift in Sources */,
 				CB36D13A23BE7A0E00EAF431 /* AppDelegate.swift in Sources */,
 				CB36D13C23BE7A0E00EAF431 /* SceneDelegate.swift in Sources */,
+				CB36D16A23C0061B00EAF431 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

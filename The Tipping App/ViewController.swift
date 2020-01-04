@@ -14,10 +14,39 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var percentLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let defaults = UserDefaults.standard
+        //let defaultTip = defaults.integer(forKey: "defaultTip")
+        tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
+        // This is a good place to retrieve the default tip percentage from UserDefaults
+        // and use it to update the tip amount
+        let defaults = UserDefaults.standard
+        tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
+        calculateTip(self)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("view did appear")
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("view will disappear")
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("view did disappear")
     }
 
     @IBAction func onTap(_ sender: Any) {
@@ -37,6 +66,7 @@ class ViewController: UIViewController {
         //update tip and total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        percentLabel.text = String(format: "%.0f%%", (tipPercentages[tipControl.selectedSegmentIndex]*100))
     }
 }
 
